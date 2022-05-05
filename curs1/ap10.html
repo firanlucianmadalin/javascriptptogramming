@@ -18,9 +18,11 @@
                 this._name = name;
             }
             get name() {
+                alert(222);
                 return this._name;
             }
             set name(newName) {
+                alert(55555);
                 newName = newName.trim();
                 if (newName === '') {
                     throw 'Error';
@@ -31,10 +33,10 @@
         let person = new Person("Mihai");
         // set 
         person.name='Ion';
-        person.name='Dan';
+        person.name='      ';
         // get
         let mynume = person.name;
-        console.log('Numele este ', mynume);
+        //console.log('Numele este ', mynume);
     </script>
 </body>
 

@@ -26,10 +26,11 @@
             static salut() {
                 //Gresit  ${this.nume} in metoda statica daca proprietatea nu e statica
                 //Atentie nu putem folosi this in metode statice dacat pentru membrii declastati static
-                console.log(`Buna ziua, numele meu este: ${this.nume} si am ${this.varsta} ani si sunt in grupa ${this.grupa}.`)
+                console.log(`Buna ziua, numele meu este: ${this.nume} si am ${this.varsta} ani 
+                si sunt in grupa ${this.grupa}.`)
 
             }
-            static afiseazaOrar() {
+            static  afiseazaOrar() {
                 console.log(`Orar pentru Grupa ${Student.grupa}`);// metoda 1
                 console.log(`Orar pentru Grupa ${this.grupa}`); //metoda 2
                 console.log(`Marti de la 17:30 JavaScript`);
@@ -42,14 +43,15 @@
                 console.log(`Azi am terminat toate examenele la JavaScript.`);
             }
         }
+       
         // nu este nevoie sa instantiem clasa ca sa apelam metodele statice
-        Student.afiseazaOrar();
+      // Student.afiseazaOrar();
         const student7 = new Student(7, 'Paunescu Vlad', 25, 7, 10);
-        student7.salut();
+        
         // const student8 = new Student(8, 'Iancu Toma', 27, 10, 10);
         
         // genereaza eroare
-        student7.afiseazaOrar();
+        //student7.afiseazaOrar();
 
     </script>
 </body>

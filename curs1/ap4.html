@@ -33,17 +33,20 @@
         paine.nume='Paine cu maia'; 
         console.log(paine['nume']);
         // clonam un obiect 
-        const paineNeagra = Object.assign(paine);
-        console.log(paineNeagra);
+         const paineNeagra = Object.assign(paine);
+       
+         console.log(paine);
+         paineNeagra.nume='Paine neagra';
+         //console.log(paineNeagra);
         paineNeagra.gramaj =1000;
-        console.log(paineNeagra);
+         console.log(paineNeagra);
 
         // Atentie clonare vs copiere
-        const paineAlba = paine;
-        console.log(paineAlba);
-        paineAlba.nume='Paine Alba';
-        console.log('produsul paine alba',paineAlba);
-        console.log('produsul paine cu maia',paine);
+         const paineAlba = paine;
+         console.log(paineAlba);
+         paineAlba.nume='Paine Alba';
+         console.log('produsul paine alba',paineAlba);
+         console.log('produsul paine cu maia',paine);
         
     </script>
 </body>
