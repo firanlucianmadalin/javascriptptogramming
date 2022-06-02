@@ -1,0 +1,8 @@
+<?xml version ="1.0" encoding= "UTF-8"?>
+<!DOCTYPE catalog 
+<!ELEMENT catalog (articol*)>
+<!ELEMENT articol (nume,categorie,descriere?)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT categorie (#PCDATA)>
+<!ELEMENT descriere (#PCDATA)>
+<!ATTLIST articol id CDATA #REQUIRED>
